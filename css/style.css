@@ -1,0 +1,134 @@
+/* general */
+@font-face {
+  font-family: Lato;
+  src: "./fonts/Lato-Regular.ttf"; }
+@font-face {
+  font-family: Lato-light;
+  src: "./fonts/Lato-Light.ttf"; }
+body {
+  background-color: #f7fcfe;
+  text-align: center;
+  font-family: Lato, Arial;
+  color: #001d30; }
+  body .weather-wiget {
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-top: 100px; }
+    body .weather-wiget .search {
+      background-color: #fff;
+      position: absolute;
+      bottom: 100%;
+      display: inline-block;
+      left: 10%;
+      padding: 12px 25px;
+      box-shadow: 0 0 3px #c9c8c8;
+      z-index: 0; }
+      body .weather-wiget .search form {
+        margin: 0; }
+        body .weather-wiget .search form input {
+          padding: 6px 10px;
+          vertical-align: top; }
+        body .weather-wiget .search form input[type="text"] {
+          min-width: 200px;
+          border: 1px solid #e2e2e1; }
+        body .weather-wiget .search form input[type="image"] {
+          background-color: #001d30;
+          margin-left: -3px;
+          padding: 4px 10px; }
+        body .weather-wiget .search form input[type="image"]:hover {
+          background-color: #96d5ff; }
+    body .weather-wiget main {
+      position: relative;
+      background-image: url("../images/background/general.jpg");
+      background-size: cover;
+      padding: 40px 0;
+      box-shadow: 0 0 3px #c9c8c8;
+      text-align: center;
+      z-index: 9; }
+      body .weather-wiget main h1, body .weather-wiget main h3, body .weather-wiget main p {
+        color: #fff;
+        z-index: 8;
+        position: relative; }
+      body .weather-wiget main h1 {
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 0.5em; }
+      body .weather-wiget main h3 {
+        font-size: 22px;
+        margin: 0 0 10px; }
+      body .weather-wiget main p {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0.8em; }
+      body .weather-wiget main #icon {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        vertical-align: top; }
+      body .weather-wiget main #icon:before {
+        font-size: 50px;
+        color: #fff; }
+      body .weather-wiget main .filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0; }
+    body .weather-wiget aside {
+      background-color: #fff;
+      top: 100%;
+      position: absolute;
+      box-shadow: 0 0 3px #c9c8c8;
+      width: 90%;
+      left: 5%;
+      padding: 15px 0 0;
+      z-index: 0; }
+      body .weather-wiget aside ul {
+        padding: 0;
+        list-style: none;
+        margin: 0; }
+        body .weather-wiget aside ul li {
+          position: relative;
+          padding: 12px 0 12px; }
+          body .weather-wiget aside ul li h4 {
+            margin: 0 0 12px;
+            display: inline-block; }
+          body .weather-wiget aside ul li i {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: sub;
+            margin: 0 5px; }
+          body .weather-wiget aside ul li i:before {
+            font-size: 16px; }
+          body .weather-wiget aside ul li span {
+            display: inline-block;
+            font-size: 14px; }
+          body .weather-wiget aside ul li p {
+            margin: 0;
+            font-size: 12px; }
+        body .weather-wiget aside ul li:after {
+          content: '';
+          display: inline-block;
+          width: 100px;
+          height: 1px;
+          background-color: #e2e2e1;
+          position: absolute;
+          left: calc(50% - 50px);
+          bottom: 0; }
+        body .weather-wiget aside ul li:last-of-type:after {
+          display: none; }
+
+@media screen and (min-width: 992px) {
+  body .weather-wiget aside {
+    bottom: auto;
+    top: 10%;
+    left: 100%;
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */

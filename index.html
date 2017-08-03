@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Weather Station</title>
+	<meta name="viewport" content="width=device-width, initial-scale= 1">
+	<link type="text/css" rel="stylesheet" href="./css/style.css">
+	<link href="./css/owfont-regular.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="weather-wiget">
+				<div class="search">
+					<form onsubmit="return formSubmit()">
+						<input id="enterLocation" type="text" placeholder="SEARCH UK POSTCODE" autocomplete autofocus autosave  />
+						<input id="searchLocation" type="image" src="./images/icon.svg">
+					</form>
+				</div>
+				<main>
+					<div class="filter"></div>
+					<i id="icon" class="owf"></i>
+					<h1 id="location">City, Country</h1>
+					<p id="day">Calendar Day</p>
+					<h3 id="temperature">Temperature</h3>
+					<p id="description">Description</p>
+				</main>
+				<aside>
+					<ul>
+						<li>
+							<h4 class="nextDayName">Calendar Day</h4>
+							<i class="owf nextDayIcon"></i>
+							<span class="nextDayTemperature">Temperature</span>
+							<p class="nextDayDescription">Next Day Description</p>
+						</li>
+						<li>
+							<h4 class="nextDayName">Calendar Day</h4>
+							<i class="owf nextDayIcon"></i>
+							<span class="nextDayTemperature">Temperature</span>
+							<p class="nextDayDescription">Next Day Description</p>
+						</li>
+						<li>
+							<h4 class="nextDayName">Calendar Day</h4>
+							<i class="owf nextDayIcon"></i>
+							<span class="nextDayTemperature">Temperature</span>
+							<p class="nextDayDescription">Next Day Description</p>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</div>
+	</section>
+	<script src="./js/script.js"></script>
+</body>
+</html>
